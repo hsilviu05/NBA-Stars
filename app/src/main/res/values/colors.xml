@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="nba_background">#0B1220</color>
+    <color name="nba_surface">#121C2E</color>
+    <color name="nba_surface_light">#1B2942</color>
+    <color name="nba_primary">#F59E0B</color>
+    <color name="nba_primary_dark">#D97706</color>
+    <color name="nba_text">#F8FAFC</color>
+    <color name="nba_text_secondary">#B6C2D1</color>
+    <color name="nba_border">#2B3C57</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+</resources>

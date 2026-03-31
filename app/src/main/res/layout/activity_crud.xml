@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CRUD - NBA Players"
+                android:textColor="@color/nba_text"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Insert, update, or delete players from the local database."
+                android:textColor="@color/nba_text_secondary"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_input"
+            android:hint="Name"
+            android:padding="14dp"
+            android:textColor="@color/nba_text"
+            android:textColorHint="@color/nba_text_secondary" />
+
+        <EditText
+            android:id="@+id/edtTeam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_input"
+            android:hint="Team"
+            android:padding="14dp"
+            android:textColor="@color/nba_text"
+            android:textColorHint="@color/nba_text_secondary" />
+
+        <EditText
+            android:id="@+id/edtPosition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_input"
+            android:hint="Position"
+            android:padding="14dp"
+            android:textColor="@color/nba_text"
+            android:textColorHint="@color/nba_text_secondary" />
+
+        <EditText
+            android:id="@+id/edtShortDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_input"
+            android:hint="Short Description"
+            android:minLines="2"
+            android:gravity="top|start"
+            android:padding="14dp"
+            android:textColor="@color/nba_text"
+            android:textColorHint="@color/nba_text_secondary" />
+
+        <EditText
+            android:id="@+id/edtFullDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_input"
+            android:hint="Full Description"
+            android:minLines="4"
+            android:gravity="top|start"
+            android:padding="14dp"
+            android:textColor="@color/nba_text"
+            android:textColorHint="@color/nba_text_secondary" />
+
+        <EditText
+            android:id="@+id/edtImageName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_input"
+            android:hint="Image Name (ex: lebron)"
+            android:padding="14dp"
+            android:textColor="@color/nba_text"
+            android:textColorHint="@color/nba_text_secondary" />
+
+        <EditText
+            android:id="@+id/edtWebUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_input"
+            android:hint="Web URL"
+            android:padding="14dp"
+            android:textColor="@color/nba_text"
+            android:textColorHint="@color/nba_text_secondary" />
+
+        <Button
+            android:id="@+id/btnInsert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_button"
+            android:padding="14dp"
+            android:text="Insert"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_button"
+            android:padding="14dp"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_button"
+            android:padding="14dp"
+            android:text="Delete"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Tap a player below to load it into the form"
+            android:textColor="@color/nba_text_secondary"
+            android:textSize="14sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerCrud"
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:layout_marginTop="10dp"
+            android:clipToPadding="false"
+            android:paddingBottom="8dp" />
+
+    </LinearLayout>
+</ScrollView>
